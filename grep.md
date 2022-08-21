@@ -1,4 +1,5 @@
-# Grep Command
+# Grep (Global Regular Expression Print)
+
 
 <li>it is use to search for line a certiain pattern in string</li>
 
@@ -83,4 +84,19 @@
     grep -w over test.txt
 
 
+```
+
+```bash
+#15
+grep -E b.+ metasyntactic.list 
+# foobar,bar,baz,wibble,wobble,wubble
+#16
+grep -E ^b.. metasyntactic.list 
+#bar,baz
+#17
+grep -E ^b[[:alpha:]]+  metasyntactic.list 
+# bar,baz
+#18
+grep -E b[[:alpha:]]+  metasyntactic.list 
+#foobar,bar,baz,wibble,wobble,wubble
 ```
