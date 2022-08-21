@@ -12,5 +12,13 @@
     / -->tmp;
     / -->usr;
     / -->var;
+    home -->eve;
+    home -->bob;
+    home -->alice;
+    usr -->tmp;
+    usr --> sbin;
+    usr -->local;
+    usr -->bin;
+    var -->tmp;
 ```
 
