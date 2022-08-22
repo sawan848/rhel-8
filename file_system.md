@@ -37,7 +37,15 @@ project
     │   file021.txt
     │   file022.txt
 ```
-
+<style>
+    b{
+        color:yellow;    
+    }
+    a{
+        color:yellowgreen;
+    }
+    
+</style>
 # Important Linux Directories
 
 | Syntax | Description |
@@ -56,17 +64,52 @@ project
 |<a href="#lib">/lib</a> |Shared library and kernel modules|
 |<a href="#lib64">/lib64</a>| Contains 64-bit version shred library|
 |<a href="#mnt">/mnt</a> | mount point of file system|
-|<a href="#proc">/proc</a>| Kernel data structure mounted ad filesystem.only applicable to linux based os|
+|<a href="#proc">/proc</a>| Kernel data structure mounted and filesystem.only applicable to linux based os|
 |<a href="#sys">/sys</a> | Kernel data structure for different hardware and device Block Device,Firmware,ACPI etc.Applicable for linux base os only|
 
+# /bin
+* * it cointains the excutable binary files 
+* * the files which are their execute their command
+* * Command (like cd,cat,mkdir ) ka binary file store hota h
+
 # /boot
-# /dev
+* * it is used for the booting system and the files which are stored in the ram at the time booting
+
+# /opt
+* * it stores the optional software
+* * in many cases this is the software form outside distribution repository.
+* * generally this directory is empty.it is additional directory to install software.
+# /sbin
+* * System binary files or the files which are executed by the files which are executed by <b> admin/root/ </b> super user only
+* * ex. if you want to change the password then we can find their files
+# /lib
+* * it contains library files
+* * binary which are found in <b>/bin</b> or <b>/sbin </b> often used. theya are shered directories in <b>/lib</b>
+* * <b>/modules</b> it contains the kernel modules 
+* * * it present in the <b>/lib</b>
 # /etc
-# /home
+* * it conains the system configuration files 
 # /root
-# /run
-# /tmp
-# /usr
+* * this is the root user home directory.
+* * in this directory we have a anaconda-ks.cfg.
+* * * it is used to kickstart of linux installation
+* * * this file is created at time creating the installtion 
+
+# /srv
+* * this directory is used for the server to store temporary data 
+* * it is used by the system.
+* * * you may used by the data that is served by the system.
+* * * when we create a <b>nfs server</b> then we utilize this directory.
+* * * it is an additional directory for help
+# /mnt
+* * it is used for the mount purpose
+# /proc
+* * it contains the process related files
+* * it is a special directory but it is not taking disk space.
+* * it is actually a view of kernel.what the kernel manages.
+* * * we can use this file to interact with kernel directly
+* * * * check what type of cpu used
+* * * * * <b>cat  /proc/cpuinfo</b>
 # /var
 <div class="container">
 In Red Hat Enterprise Linux 7 and later, four older directories in <b>/</b> have identical

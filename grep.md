@@ -1,6 +1,6 @@
 # Grep (Global Regular Expression Print)
 
-
+<li>it is used to filter the string or line of text a certain string</li>
 <li>it is use to search for line a certiain pattern in string</li>
 
 ```bash
@@ -100,3 +100,29 @@ grep -E ^b[[:alpha:]]+  metasyntactic.list
 grep -E b[[:alpha:]]+  metasyntactic.list 
 #foobar,bar,baz,wibble,wobble,wubble
 ```
+
+```bash
+    #19
+    cat sports.txt | grep Virat
+    cat sports.txt | grep -i Virat
+    #20
+    grep Virat sports.txt
+    grep -i virat sports.txt 
+    #21
+    cat sports.txt | grep -v Virat
+    #22
+    cat sports.txt | grep -A1 Virat
+    #23
+    cat sports.txt | grep -B2  Rahul
+    #24
+    cat sports.txt | grep -C1  Rahul
+    
+```
+|Syntax|Description|
+|------|-----------|
+|-i | ignore case sensitive|
+|-v |it exclude the related quey,it ignore the that particular string| 
+|iv/vi|it show case insensitive way or exclude the related query |  
+|A1| it print the current line and print after one line. ex if A2 it print current line and print after two line |
+|B1| it print the current line and print below one line. ex if B2 it print current line and print below two line |
+|C1| it print the one line before and one line after. ex if C2 it print two line before and two line after |
