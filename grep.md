@@ -118,6 +118,16 @@ grep -E b[[:alpha:]]+  metasyntactic.list
     cat sports.txt | grep -C1  Rahul
     
 ```
+
+```bash
+    #25 searching a string in 2 files
+    grep -E 'ksawan802@gmail.com' fie1.log fie2.log
+
+```
+
+
+
+
 |Syntax|Description|
 |------|-----------|
 |-i | ignore case sensitive|

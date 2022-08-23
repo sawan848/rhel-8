@@ -125,3 +125,6 @@ containing different sets of files.
 In Red Hat Enterprise Linux 7 and later, the directories in / are symbolic links to the
 matching directories in /usr
 </div>
+
+
+<p>Network File Sharing (NFS) is a protocol that allows you to share directories and files with other Linux clients over a network</p>

@@ -33,7 +33,7 @@
 |<a href="#cut">cut</a> | listing a file|
 |<a href="#file">file</a> | listing a file|
 |<a href="#export">export</a> | listing a file|
-|<a href="#lsblk">lsblk</a> | listing a file|
+|<a href="#lsblk">lsblk</a> | list the block of hdd|
 |<a href="#who">who</a> | listing a file|
 |<a href="#where">where</a> | listing a file|
 |<a href="#alias">alias</a> | listing a file|
@@ -98,17 +98,25 @@ mkdir a1 b1 c1 it create three folder/directory</p>
 
 ```
 # touch
+* we can create the empty file and change the timestamp of the file ,to modifiy the file
 ## create blank files 
+
 ```bash
     touch index.html
     touch index{a..f}.html
+```
+
+```bash
+    touch -t 201001100354 kafka.txt
+   #2010--year 01--month 10--date 0354--time 03:54 
+
 ```
 
 # cal
 ## calender
 
 # date
-## date
+*  date +% r shows current date
 
 # tail
 ## read file from bottom 
@@ -134,4 +142,81 @@ mkdir a1 b1 c1 it create three folder/directory</p>
 
 
 # ls
-<p>listing a file
+* * it list all the file and directory.it don't show additional details
+* * <b> ls /tmp</b> when we use ls with path it shows all the content of the directory 
+* * <b>ls -l</b>  long list all the conatint.
+* * * it also show additional details also.
+* * * it doesn't include hidden items.
+* * <b>ls -al</b> long list the content of  all the files.
+* * * it display a normal hidden file also.
+* * * * the file having the dot(.) eg :- '.bsrc ,.cache' these are the hidden  files
+* * <b>ls -lh </b> it shows all the details in the human readable format.
+the files size in kb,mb and GB also.
+* * <b>ls -ldh</b>
+
+# file 
+* it shows only the what type of content are present in the file
+* to check which type of files these are: 
+* * <b>file filename</b>
+```bash
+    file /dev/sda
+    file a
+    file linkedlist.cpp
+
+    touch files1.jpeg
+    file files1
+    cat >file.png
+    hi welcome ctr+D
+    file file.png
+```
+
+# lsblk
+* it show hdd on which we have installed the os.
+# who
+# where
+# alias
+
+<table>
+<tr>
+    <th>Symbol</th>
+    <th>Description</th>
+    <th>Example</th>
+</tr>
+<tr>
+    <td>;</td> 
+    <td>Semicolon</td>
+    <td> <b>date; cat;<b></td>   
+</tr>
+<tr>
+    <td>&</td> 
+    <td>AND</td>   
+</tr>
+<tr>
+    <td>|</td> 
+    <td>OR</td>   
+</tr>
+<tr>
+    <td>&&</td> 
+    <td>Logical AND</td>   
+</tr>
+<tr>
+    <td>||</td> 
+    <td>Logical OR</td>   
+</tr>
+<tr>
+    <td>&?</td> 
+    <td></td>   
+</tr>
+<tr>
+    <td>#</td> 
+    <td>comment</td>   
+</tr>
+<tr>
+    <td>\</td> 
+    <td></td>   
+</tr>
+<tr>
+    <td>&?</td> 
+    <td></td>   
+</tr>
+</table>
