@@ -175,6 +175,12 @@ the files size in kb,mb and GB also.
 # who
 # where
 # alias
+<!--  -->
+
+
+|Symbol|Description|Example|
+|------|-----------|-------|
+|| -->
 
 <table>
 <tr>
@@ -204,8 +210,9 @@ the files size in kb,mb and GB also.
     <td>Logical OR</td>   
 </tr>
 <tr>
-    <td>&?</td> 
-    <td></td>   
+    <td>$?</td> 
+    <td><p>it checks the previous command was successfull or not<p></td>   
+    <td>echo $?</td> 
 </tr>
 <tr>
     <td>#</td> 
