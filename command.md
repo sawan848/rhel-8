@@ -175,7 +175,6 @@ the files size in kb,mb and GB also.
 # who
 # where
 # alias
-
 <table>
 <tr>
     <th>Symbol</th>
