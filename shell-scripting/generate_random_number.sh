@@ -5,6 +5,7 @@
 
 for i in `seq 1 20`
 do 
-	echo $((RANDOM%1000))
+	var=$((RANDOM%10))
+	cp fruit_list fruit_list_${var}
 done
 
