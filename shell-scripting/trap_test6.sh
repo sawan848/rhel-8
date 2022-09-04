@@ -31,4 +31,4 @@ else
 fi
 
 cat /tmp/df.log /tmp/startup.log /tmp/hostname.log > $MainLogFileName
-sleep 30
+sleep 9999
