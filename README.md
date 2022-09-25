@@ -4,3 +4,6 @@
 * * [Baisc Command](/command.md)
 
 * * [Regular Expression](/regular_expression.md)
+* * [SELinux](/SELinux.md)
+
+* * [Vim](/vim.md)

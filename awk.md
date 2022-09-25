@@ -1,4 +1,23 @@
- awk 'match($0,/o/) {print $0 " has \"o\" chatacter at " RSTART}' numbered.txt 
+     
+* * Awk is abbreviated from names of the developers - Aho,Weinberger,and Kernigh
+
+### AWK operations:
+* * Scans a file line by line
+* * Splits each input line into fields
+* * Compares input line/fields to pattern
+* * Performs action(s) on matched lines
+
+### Useful for:
+* * Transform data files
+* * Produce formatted reports
+
+### Programming Constructs:
+* * Format output lines
+* * Arithmetic and string operations
+* * Conditionals and loops
+
+
+awk 'match($0,/o/) {print $0 " has \"o\" chatacter at " RSTART}' numbered.txt 
 awk '{print substr($0,4)}' numbered.txt
 df | awk 'NR==3,NR==7 {print NR,$0}'
 * * df | awk 'END {print NR}'
